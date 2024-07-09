@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title> js bulb</title>
+    <style>
+        body{
+            background-image: url("https://wallpapercave.com/wp/wp1910039.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body >
+    <center>
+        <img id="myImage" onclick="changeImage()" src="off bulb.jpg" width="300" height="300">
+
+    </center>
+    <h1 style="color:aliceblue"><u>ABOUT BULB</u></h1>
+    <h2 style="color: honeydew;"><p>The incandescent light bulb turns electricity into light by sending the electric current through a thin
+    wire called a filament. Electrical filaments are made up mostly of tungsten metal.The resistance of the filament heats the bulb. Eventually
+    the filament gets so hot that it glows, producing light.</p></h2>
+    <br>
+    <h2 style="color: honeydew;">TYPE OF LIGHT</h2>
+    <h3 style="color: honeydew;"><ul>
+        <li> fluorescent light</li>
+        <li> Compact fluorescent lights</li>
+        <li>light-emitting diode </li>
+    </ul></h3>
+
+<script>
+function changeImage() {
+ var image = document.getElementById('myImage');
+ if (image.src.match("bulbon")) {
+   image.src = "off bulb.jpg";
+ } else {
+   image.src = "on bulb.jpg";
+ }
+}
+
+</script>
+</body>
+</html>
+
+
